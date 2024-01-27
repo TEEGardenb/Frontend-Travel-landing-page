@@ -26,7 +26,7 @@ SECRET_KEY = config('secret_key')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -61,7 +61,7 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",  # puerto del servidor frontend en local
     # puerto del servidor frontend en desplegado
-    "https://teegardenb.github.io/Frontend-Travel-landing-page/"
+    "https://teegardenb.github.io",
 ]
 
 ROOT_URLCONF = 'TravelLandingPage.urls'
